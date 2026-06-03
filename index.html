@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>ARMS FIT | Premium Tactical & Combat Apparel</title>
+  <meta name="description" content="High-end military-inspired clothing and tactical gear. Engineered for special operations, field maneuvers, and rugged outdoor combat aesthetics. Shop jackets, pants, boots, and accessories.">
+  <meta name="keywords" content="tactical apparel, combat gear, field jacket, ranger green, cargo pants, premium outdoor clothing, military style">
+  
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="glass-panel">
+    <div class="nav-container">
+      <div class="logo-area">
+        <button class="action-btn menu-toggle-btn" id="nav-menu-btn" aria-label="System Menu">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 256 256" style="vertical-align: middle; margin-right: 4px;">
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+          </svg>
+          <span>[MENU //]</span>
+        </button>
+        <div class="sys-indicator"></div>
+        <a href="#" class="logo-tag">ARMS<span>FIT</span></a>
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link active" data-filter-category="All">Catalog</li>
+          <li class="nav-link" data-filter-category="Jackets">Jackets</li>
+          <li class="nav-link" data-filter-category="Pants">Pants</li>
+          <li class="nav-link" data-filter-category="Tactical Shirts">Shirts</li>
+          <li class="nav-link" data-filter-category="Footwear">Footwear</li>
+          <li class="nav-link" data-filter-category="Accessories">Accessories</li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <div class="sys-ticker">
+          <div class="sys-indicator"></div>
+          <span>SYS STATUS: SECURE</span>
+        </div>
+        
+        <div class="theme-select-container">
+          <select id="theme-selector" class="theme-select-hud">
+            <option value="multicam">SYS: MULTICAM BLACK</option>
+            <option value="woodland">SYS: WOODLAND GREEN</option>
+            <option value="desert">SYS: DESERT COYOTE</option>
+            <option value="light">SYS: LIGHT MODE</option>
+          </select>
+        </div>
+        
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="nav-wishlist-btn" aria-label="Watchlist">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M240,94c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,220.66,16,164,16,94A62,62,0,0,1,121.72,52.33l6.28,6.28,6.28-6.28A62,62,0,0,1,240,94Z"></path>
+          </svg>
+          <span class="btn-badge" id="wishlist-badge" style="display: none;">0</span>
+        </button>
+        
+        <!-- Shopping Cart Button -->
+        <button class="action-btn" id="nav-cart-btn" aria-label="Mission Manifest">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V208a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,176H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40V208Z"></path>
+          </svg>
+          <span class="btn-badge" id="cart-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Lifestyle Banner
+       ========================================================================== -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('assets/hero_lifestyle.png');"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-hud-lines">
+      <!-- Tactical Overlay elements -->
+      <div style="position: absolute; top: 1rem; left: 1rem; border-left: 1px solid rgba(0, 255, 102, 0.4); border-top: 1px solid rgba(0, 255, 102, 0.4); width: 20px; height: 20px;"></div>
+      <div style="position: absolute; top: 1rem; right: 1rem; border-right: 1px solid rgba(0, 255, 102, 0.4); border-top: 1px solid rgba(0, 255, 102, 0.4); width: 20px; height: 20px;"></div>
+      <div style="position: absolute; bottom: 1rem; left: 1rem; border-left: 1px solid rgba(0, 255, 102, 0.4); border-bottom: 1px solid rgba(0, 255, 102, 0.4); width: 20px; height: 20px;"></div>
+      <div style="position: absolute; bottom: 1rem; right: 1rem; border-right: 1px solid rgba(0, 255, 102, 0.4); border-bottom: 1px solid rgba(0, 255, 102, 0.4); width: 20px; height: 20px;"></div>
+    </div>
+    
+    <div class="hero-hud-data">
+      <div>OBJECTIVE IDENTIFIER: OP-ARMSFIT</div>
+      <div class="hud-gps-coords">LAT: 34.0522° N | LNG: -118.2437° W | ALT: 412m</div>
+      <div>CAMERA SCANNER: ACTIVE (120FPS)</div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-tagline"><span class="sys-indicator"></span> ELITE LEVEL SPECIFICATION</span>
+      <h1 class="hero-title">ENGINEERED FOR THE UNCOMPROMISING</h1>
+      <p class="hero-desc">Sleek, low-profile tactical apparel designed in collaboration with special operations operators. Built from high-durability 500D Cordura and NYCO ripstop materials.</p>
+      
+      <div class="hero-actions">
+        <a href="#catalog" class="btn-tactical">
+          DEPLOY MISSION CATALOG
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 256 256" style="margin-left: 4px;">
+            <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,62.34a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+          </svg>
+        </a>
+        <a href="#new-collection" class="btn-tactical btn-secondary">NEW ARRIVALS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Shop by Category Section
+       ========================================================================== -->
+  <section class="categories-section">
+    <div class="section-header">
+      <span class="section-tag">// MODULE: CATEGORY GRID</span>
+      <h2 class="section-title">EQUIPMENT CATEGORIES</h2>
+    </div>
+    
+    <div class="category-grid">
+      <!-- Category 1 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="Jackets">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+        </svg>
+        <span class="category-name">JACKETS</span>
+      </div>
+      <!-- Category 2 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="Pants">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+        </svg>
+        <span class="category-name">PANTS</span>
+      </div>
+      <!-- Category 3 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="Tactical Shirts">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+        </svg>
+        <span class="category-name">SHIRTS</span>
+      </div>
+      <!-- Category 4 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="Footwear">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+        </svg>
+        <span class="category-name">FOOTWEAR</span>
+      </div>
+      <!-- Category 5 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="Accessories">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h1.592c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.94-1.11.94h-1.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.43l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.991l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+        </svg>
+        <span class="category-name">ACCESSORIES</span>
+      </div>
+      <!-- Category 6 -->
+      <div class="category-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-filter-category="All">
+        <svg class="category-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path>
+        </svg>
+        <span class="category-name">ALL EQUIPMENT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Best Sellers / Product Catalog
+       ========================================================================== -->
+  <section class="catalog-section" id="catalog">
+    <div class="catalog-header">
+      <div>
+        <span class="section-tag">// INTERFACE: WEAPONS & APPAREL CATALOG</span>
+        <h2 class="catalog-title">TACTICAL INVENTORY</h2>
+      </div>
+      
+      <div class="hud-search-container">
+        <input type="text" id="search-bar" class="hud-search-input" placeholder="SEARCH CATALOG //">
+        <svg class="hud-search-icon" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+        </svg>
+        <div id="search-results-dropdown" class="hud-search-results glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" style="display: none;"></div>
+      </div>
+
+      <div class="catalog-count" id="product-count">[11 Items Found]</div>
+    </div>
+    
+    <div class="catalog-layout">
+      <!-- Filtering Sidebar -->
+      <aside class="filter-sidebar glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+        
+
+        
+        <!-- Category (Interactive Tabs fallback) -->
+        <div class="filter-group">
+          <span class="filter-heading">Collection Categories</span>
+          <div class="filter-options">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="category-check" value="Jackets" checked style="display:none;">
+              <span>Jackets & Shells</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="category-check" value="Pants" checked style="display:none;">
+              <span>Cargo & Combat Pants</span>
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="category-check" value="Shirts" checked style="display:none;">
+              <span>Under-Armor Shirts</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Price Range -->
+        <div class="filter-group">
+          <span class="filter-heading">Price Parameter <span id="price-label" style="color: var(--hud-glow-green);">$350</span></span>
+          <div class="price-slider-container">
+            <input type="range" id="price-range" class="range-slider" min="50" max="350" step="10">
+            <div class="price-inputs">
+              <span>Min: $50</span>
+              <span>Max: $350</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sizes filter -->
+        <div class="filter-group">
+          <span class="filter-heading">Tactical Sizing</span>
+          <div class="size-grid">
+            <div class="size-chip" data-filter-size="S">S</div>
+            <div class="size-chip" data-filter-size="M">M</div>
+            <div class="size-chip" data-filter-size="L">L</div>
+            <div class="size-chip" data-filter-size="XL">XL</div>
+          </div>
+        </div>
+
+
+      </aside>
+      
+      <!-- Main Product Grid Container -->
+      <main class="product-grid" id="product-grid">
+        <!-- JS Renders cards here -->
+      </main>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       New Tactical Collection (Featured Promo)
+       ========================================================================== -->
+  <section class="promo-section" id="new-collection">
+    <div class="promo-container">
+      <div class="promo-info">
+        <span class="promo-tag">// DEPLOYMENT ALERT: OPERATOR GEN-V</span>
+        <h2 class="promo-title">ARMS FIT MODULAR ARMOR APPAREL</h2>
+        <p class="promo-desc">Our latest development phase engineered for combat operations in temperature anomalies. Incorporating active moisture ventilation grids, laser-cut loadbearing loops, and high-frequency RF-welded seams.</p>
+        
+        <div class="promo-specs">
+          <div class="promo-spec-item">
+            <span class="spec-val">1000D</span>
+            <span class="spec-lbl">Ballistic Rating</span>
+          </div>
+          <div class="promo-spec-item">
+            <span class="spec-val">0.02s</span>
+            <span class="spec-lbl">Quick-Release Buckle</span>
+          </div>
+        </div>
+        
+        <a href="#catalog" class="btn-tactical">ACQUIRE ARMOR BUNDLE</a>
+      </div>
+      
+      <div class="promo-visual-wrap">
+        <!-- 3D Layered floating card (Anti-Gravity) -->
+        <div class="promo-3d-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+          <div class="promo-card-grid"></div>
+          <div class="sys-ticker" style="margin-bottom: 1rem;">
+            <div class="sys-indicator"></div>
+            <span>SPEC: ARMED M-33</span>
+          </div>
+          <div class="promo-card-graphic">
+            <!-- Custom Vector outline -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="25" y="20" width="50" height="60" rx="4" />
+              <line x1="25" y1="35" x2="75" y2="35" />
+              <line x1="25" y1="50" x2="75" y2="50" />
+              <line x1="25" y1="65" x2="75" y2="65" />
+              <circle cx="50" cy="42" r="6" />
+            </svg>
+          </div>
+          <div class="promo-card-footer">
+            <div>
+              <span class="spec-lbl">Armor Plate Harness</span>
+              <h3 style="font-size: 1.15rem; color: var(--hud-glow-green);">APEX CARRIER MK4</h3>
+            </div>
+            <span class="hud-title" style="color: var(--text-secondary);">$410.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Product Carousel
+       ========================================================================== -->
+  <section class="carousel-section">
+    <div class="catalog-header" style="border:none; margin-bottom: 1rem;">
+      <div>
+        <span class="section-tag">// MODULE: NEW ARRIVALS CAROUSEL</span>
+        <h2 class="catalog-title">RECOMMENDED GEAR CONFIGURATIONS</h2>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Previous">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+          </svg>
+        </button>
+        <button class="carousel-btn" id="carousel-next" aria-label="Next">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="carousel-viewport" id="carousel-viewport">
+      <!-- Item 1 -->
+      <div class="carousel-item product-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-id="j-01">
+        <div class="product-img-wrapper">
+          <img src="assets/j01_ranger.png" alt="Apex Hardshell Field Jacket" class="product-img-real">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Jackets</span>
+          <h3 class="product-name">Apex Hardshell Field Jacket</h3>
+          <div class="product-footer">
+            <span class="product-price">$289.00</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="carousel-item product-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-id="p-01">
+        <div class="product-img-wrapper">
+          <div class="product-visual">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1" style="width:100%; height:100%;">
+              <path d="M32 15 L68 15 L72 85 L52 85 L50 45 L48 85 L28 85 Z" />
+              <line x1="32" y1="22" x2="68" y2="22" />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Pants</span>
+          <h3 class="product-name">ARMS FIT Combat Pant</h3>
+          <div class="product-footer">
+            <span class="product-price">$219.00</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="carousel-item product-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-id="f-01">
+        <div class="product-img-wrapper">
+          <img src="assets/f01_black.png" alt="SpecOps Waterproof Combat Boot" class="product-img-real">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Footwear</span>
+          <h3 class="product-name">SpecOps Waterproof Combat Boot</h3>
+          <div class="product-footer">
+            <span class="product-price">$249.00</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="carousel-item product-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" data-id="a-03">
+        <div class="product-img-wrapper">
+          <div class="product-visual">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1" style="width:100%; height:100%;">
+              <rect x="32" y="25" width="36" height="50" rx="4" />
+            </svg>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Accessories</span>
+          <h3 class="product-name">ARMS FIT Ripstop Backpack</h3>
+          <div class="product-footer">
+            <span class="product-price">$165.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Customer Reviews Section ("Mission Debriefs")
+       ========================================================================== -->
+  <section class="reviews-section">
+    <div class="section-header">
+      <span class="section-tag">// MODULE: VERIFIED OPERATOR EVALUATIONS</span>
+      <h2 class="section-title">FIELD DEBRIEFS</h2>
+    </div>
+    
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+        <div class="review-header">
+          <span class="review-meta">OP: WINTER STRIKE | DEV-4</span>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"The Apex Hardshell is unmatched in wet, heavy climates. Stood watch for 12 hours in freezing rain and the moisture barrier was absolutely impenetrable. High collar blocks wind perfectly."</p>
+        <div class="review-author">
+          <div class="author-avatar">M.K</div>
+          <div class="author-info">
+            <span class="author-name">Operator Call Sign: Specter</span>
+            <span class="author-status">Verified Purchase / Active Duty Scout</span>
+          </div>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="review-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+        <div class="review-header">
+          <span class="review-meta">OP: DUNE SHIELD | DES-1</span>
+          <div class="review-rating">★★★★☆</div>
+        </div>
+        <p class="review-text">"Vanguard combat pants are incredibly heavy-duty. Ripstop fabric is indestructible but the stretch panels keep them agile. Coyote color holds up well against stains."</p>
+        <div class="review-author">
+          <div class="author-avatar">D.S</div>
+          <div class="author-info">
+            <span class="author-name">Operator Call Sign: Viper</span>
+            <span class="author-status">Verified Purchase / Field Instructor</span>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="review-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+        <div class="review-header">
+          <span class="review-meta">OP: NIGHT RUNNER | CTY-2</span>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"The SpecOps boot handles vertical climbing and slick rocky streams with Vibram grip that glue your feet to the mud. Extremely light on the feet for a tactical boot."</p>
+        <div class="review-author">
+          <div class="author-avatar">J.R</div>
+          <div class="author-info">
+            <span class="author-name">Operator Call Sign: Raven</span>
+            <span class="author-status">Verified Purchase / SWAT Detail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Newsletter Signup
+       ========================================================================== -->
+  <section class="newsletter-section">
+    <div class="newsletter-card glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+      <span class="section-tag" style="color: var(--hud-glow-amber);">// UPLINK REGISTER: SYSTEM UPDATES</span>
+      <h2 class="newsletter-title">SUBSCRIBE TO TACTICAL DISPATCH</h2>
+      <p class="newsletter-desc">Enter email credentials to receive replenishment alerts, exclusive operator blueprints, and secret development launch codes.</p>
+      
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="ENTER CLIENT EMAIL ADDRESS" required>
+        <button type="submit" class="btn-tactical newsletter-btn">INITIALIZE UPLINK</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Layout
+       ========================================================================== -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <a href="#" class="logo-tag">ARMS<span>FIT</span></a>
+        <p class="footer-brand-desc">Elite apparel designed to withstand hostile elements, field wear, and heavy payload conditions. Engineered for special tactical forces.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#catalog" class="footer-link">All Products</a></li>
+          <li><a href="#new-collection" class="footer-link">New Arrivals</a></li>
+          <li><a href="#" class="footer-link">Sizing Blueprints</a></li>
+          <li><a href="#" class="footer-link">Replenishment Schedule</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">SUPPORT PROTOCOLS</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Secure Returns</a></li>
+          <li><a href="#" class="footer-link">Warranty Registry</a></li>
+          <li><a href="#" class="footer-link">Order Tracking HUD</a></li>
+          <li><a href="#" class="footer-link">Operator FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">SYSTEM INFORMATION</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Server Status: online</a></li>
+          <li><a href="#" class="footer-link">Node: 124.99.7</a></li>
+          <li><a href="#" class="footer-link">API Version: 5.4.1</a></li>
+          <li><a href="#" class="footer-link">Security Standard: AES-256</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 ARMS FIT APPAREL CORP. ALL PROTOCOLS RESERVED.</span>
+      <div class="sys-ticker">
+        <div class="sys-indicator"></div>
+        <span>GPS MONITORING DISPATCH ACTIVE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Slide-out Shopping Drawer (Mission Manifest)
+       ========================================================================== -->
+  <div class="drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title hud-title">// MISSION MANIFEST</h3>
+      <button class="drawer-close" id="close-cart" aria-label="Close manifest">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-content" id="cart-content">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="drawer-footer">
+      <div class="subtotal-row">
+        <span>SUBTOTAL</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <button class="btn-tactical drawer-btn" id="checkout-btn">CONFIRM ORDER MANIFEST</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Slide-out Watchlist Drawer
+       ========================================================================== -->
+  <div class="drawer" id="wishlist-drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title hud-title">// WATCHLIST MONITOR</h3>
+      <button class="drawer-close" id="close-wishlist" aria-label="Close watchlist">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-content" id="wishlist-content">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Slide-out Left System Menu Drawer
+       ========================================================================== -->
+  <div class="drawer drawer-left" id="menu-drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title hud-title">// SYSTEM MENU</h3>
+      <button class="drawer-close" id="close-menu" aria-label="Close menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <!-- About Us Panel -->
+      <div class="about-us-panel glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br" style="padding: 1.25rem; margin-bottom: 2rem;">
+        <span class="filter-heading" style="color: var(--hud-glow-green); margin-bottom: 0.5rem; display: block;">// OPERATIONAL PROFILE</span>
+        <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.75rem;">
+          <strong>ARMS FIT</strong> is an elite apparel laboratory collaborating with veteran special operations forces. Built from Grade 5 titanium, NYCO ripstop, and 1000D Cordura matrices. Engineered under hostile vectors.
+        </p>
+        <div style="font-size: 0.65rem; color: var(--color-coyote); font-family: var(--font-display);">
+          STATUS: ACTIVE OPERATION // REGISTRY V5.4
+        </div>
+      </div>
+      
+      <!-- Sorted Products Panel -->
+      <div class="filter-group">
+        <span class="filter-heading">INVENTORY INDEX</span>
+        <div style="margin-bottom: 1rem;">
+          <label class="option-label" for="menu-sort-select">SORT KEY</label>
+          <select id="menu-sort-select" class="theme-select-hud" style="width: 100%; text-transform: uppercase;">
+            <option value="rating">TOP OPERATOR RATED</option>
+            <option value="price-desc">PRICE: HIGH TO LOW</option>
+            <option value="price-asc">PRICE: LOW TO HIGH</option>
+            <option value="name-asc">ALPHABETICAL: A-Z</option>
+          </select>
+        </div>
+        
+        <div id="menu-sorted-products" class="menu-products-list">
+          <!-- Dynamically Rendered Sorted Product Items -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drawer backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ==========================================================================
+       Product Detail Modal (Quick View)
+       ========================================================================== -->
+  <div class="modal" id="product-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper glass-panel hud-corner hud-corner-tl hud-corner-tr hud-corner-bl hud-corner-br">
+      <button class="modal-close-btn" id="close-modal" aria-label="Close modal">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+      </button>
+      
+      <!-- Left side product media -->
+      <div class="modal-gallery">
+        <div class="modal-main-img" id="modal-main-img">
+          <!-- Main dynamic SVG -->
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs">
+          <!-- Dynamic thumbnails -->
+        </div>
+      </div>
+      
+      <!-- Right side product specifications & actions -->
+      <div class="modal-details">
+        <div>
+          <span class="product-category" id="modal-category">Jackets</span>
+          <h2 class="modal-name" id="modal-name">Apex Hardshell Field Jacket</h2>
+        </div>
+        
+        <div class="modal-price-rating">
+          <span class="product-price" id="modal-price">$289.00</span>
+          <div class="product-rating" id="modal-rating">★★★★★ (142 reviews)</div>
+        </div>
+        
+        <p class="modal-desc" id="modal-desc">Engineered for extreme performance conditions...</p>
+        
+        <ul class="modal-spec-list" id="modal-specs">
+          <!-- Specification elements -->
+        </ul>
+        
+        <!-- Options selector -->
+        <div>
+          <span class="option-label">Color Shell Options</span>
+          <div class="modal-colors-grid" id="modal-colors">
+            <!-- Dynamic colors -->
+          </div>
+        </div>
+        
+        <div>
+          <span class="option-label">Mission Dimensions (Sizes)</span>
+          <div class="modal-sizes-grid" id="modal-sizes">
+            <!-- Dynamic sizes -->
+          </div>
+        </div>
+        
+        <button class="btn-tactical" id="modal-add-btn" style="width: 100%; margin-top: 1rem;">
+          ADD COMPONENT TO MANIFEST
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Alerts Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ==========================================================================
+       Javascript Scripts
+       ========================================================================== -->
+  <script src="js/products.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
